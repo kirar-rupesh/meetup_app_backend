@@ -1,0 +1,4 @@
+/node_modules
+/.env
+/meetup.json
+/newMeetup.json

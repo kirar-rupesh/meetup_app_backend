@@ -1,0 +1,26 @@
+[
+    {
+    "_id": "7",
+    "title": "NEW NEW NEW Photography Networking (Online)",
+    "description": "Connect with photography enthusiasts across the globe in our interactive online event.",
+    "day": "Monday",
+    "date": "2023-11-20T20:00:00Z",
+    "endDate": "2023-11-20T22:00:00Z",
+    "type": "Online",
+    "image": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg",
+    "venue": "",
+    "address": "",
+    "price": "0",
+    "speakers": [
+      {
+        "name": "Lucas White",
+        "title": "Freelance Photographer",
+        "photo": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg"
+      }
+    ],
+    "host": "Photo Pros",
+    "dressCode": "",
+    "ageRestriction": "16 and above",
+    "tags": ["photography", "networking"]
+  }
+]
