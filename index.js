@@ -18,39 +18,39 @@ app.use(express.json());
 
 initializeDatabase();
 
-const jsonData = fs.readFileSync("./meetup.json", "utf-8");
-const meetupData = JSON.parse(jsonData);
+// const jsonData = fs.readFileSync("./meetup.json", "utf-8");
+// const meetupData = JSON.parse(jsonData);
 
-function seedData() {
-  try {
-    for (const eventData of meetupData) {
-      const newEvent = new Event({
-        id: eventData.id,
-        title: eventData.title,
-        description: eventData.description,
-        day: eventData.day,
-        date: new Date(eventData.date),
-        endDate: new Date(eventData.endDate),
-        type: eventData.type,
-        image: eventData.image,
-        venue: eventData.venue,
-        address: eventData.address,
-        price: eventData.price,
-        speakers: eventData.speakers,
-        host: eventData.host,
-        dressCode: eventData.dressCode,
-        ageRestriction: eventData.ageRestriction,
-        tags: eventData.tags,
-      });
-      console.log(newEvent.title);
-      newEvent.save();
-    }
-  } catch (error) {
-    console.log("Errrrrroooorrrrrrrrrrrr in connecting database", error);
-  }
-}
+// function seedData() {
+//   try {
+//     for (const eventData of meetupData) {
+//       const newEvent = new Event({
+//         id: eventData.id,
+//         title: eventData.title,
+//         description: eventData.description,
+//         day: eventData.day,
+//         date: new Date(eventData.date),
+//         endDate: new Date(eventData.endDate),
+//         type: eventData.type,
+//         image: eventData.image,
+//         venue: eventData.venue,
+//         address: eventData.address,
+//         price: eventData.price,
+//         speakers: eventData.speakers,
+//         host: eventData.host,
+//         dressCode: eventData.dressCode,
+//         ageRestriction: eventData.ageRestriction,
+//         tags: eventData.tags,
+//       });
+//       console.log(newEvent.title);
+//       newEvent.save();
+//     }
+//   } catch (error) {
+//     console.log("Errrrrroooorrrrrrrrrrrr in connecting database", error);
+//   }
+// }
 
-seedData();
+// seedData();
 
 // to get all the movies in the database
 async function readAllEvents() {
